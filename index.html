@@ -11,9 +11,22 @@
 	<link rel="stylesheet" type="text/css" href="css/fsvs.min.css">
 
 </head>
+
 <body>
+
+	<div id="loader-wrapper" class="z-positio3">
+	
+		<div id="loader"></div>
+
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+  
+	</div>
+	<div>
+		
+	
 	<!--inicio del menu-->
-	<div class="navbar-fixed ">
+	<div class="navbar-fixed  z-positio2">
 	    <nav>
 	      <div class="nav-wrapper xxx">
 	        <a href="#!" class="brand-logo">Logo</a>
@@ -29,15 +42,31 @@
   	</div>
   	<!--termina el menu-->
   	<!--imagen de fondo-->
-  	<div id="slide">  	
+  	<div id="slide" class="blue">  	
   		<div class="fondo">
   		</div>
-  		holi
+  		<div class="content valign-wrapper">
+  			<div class="valign full-width">
+  				<div class="text grey-text text-lighten-5 indie-flower text800">
+  					Lyric all world
+  				</div>
+  			</div>
+  		</div>
   	</div>	
   	
 
 
-
+</div>
 </body>
-<script src=""></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+	$(document).ready(function() {
+
+  // Fakes the loading setting a timeout
+  setTimeout(function() {
+    $('body').addClass('loaded');
+  }, 3000);
+
+});
+</script>
 </html>
